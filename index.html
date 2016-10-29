@@ -1,12 +1,23 @@
 <html>
   <head>
-    {% if title %}
-    <title>{{ title }} - microblog</title>
-    {% else %}
-    <title>Welcome to microblog</title>
-    {% endif %}
+    <link href={{ url_for('static',filename='../static/cess.css') }} type="text/css">
+    <title>SnakeTrader</title>
   </head>
   <body>
-      <h1>Hello, {{ user.nickname }}!</h1>
+    <div class = "bodies">
+    <header>
+      <h1>Welcome to the Snake Trader.<br/>We sell Python better then anyone!</h1>
+    </header>
+
+    <table>
+      <tr>
+        <td>Login detail</td>
+        <td>Nice Graph</td>
+      </tr>
+    </table>
+
+    <footer>
+    </footer>
+  </div>
   </body>
 </html>
