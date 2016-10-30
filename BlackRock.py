@@ -1,10 +1,6 @@
 import requests
 from random import *
 
-"""
-For the examples we are using 'requests' which is a popular minimalistic python library for making HTTP requests.
-Please use 'pip install requests' to add it to your python libraries.
-"""
 
 def blackrock():
     portfolioAnalysisRequest = requests.get("https://www.blackrock.com/tools/hackathon/performance")
@@ -27,5 +23,3 @@ def CapitalOne():
     print("Id :" + str(Id))
     print("Status : valid")
     print("Have a wonderful day!")
-
-blackrock()
