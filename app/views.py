@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app
+from BlackRock import *
 
 @app.route('/')
 
@@ -10,4 +11,6 @@ def index():
 
 @app.route('/machine')
 def machine():
-    return render_template('machine.html',title='Home',)
+    temp = blackrock()
+    print(temp)
+    return render_template('machine.html',title='Home', sentData=temp)
